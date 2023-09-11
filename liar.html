@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <style>
+        /* Reset default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff6600; /* Warna saat hover */
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  section {
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .portfolio-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-item:hover {
+    transform: scale(1.05); /* Efek scaling saat hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  #profile .portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Gunakan dua kolom, kolom pertama untuk gambar, kolom kedua untuk teks */
+    grid-gap: 20px; /* Jarak antara elemen-elemen di dalam grid */
+  }
+  
+  #profile .portfolio-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  #profile .portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  #profile ul {
+    list-style-type: none; /* Hapus bullet points dari daftar */
+    padding: 0;
+    text-align: left; /* Pusatkan teks ke kiri */
+  }
+  
+  #profile ul li {
+    margin-bottom: 10px; /* Berikan jarak antara setiap item */
+  }
+  
+
+  #profile h2{
+    margin-bottom: 10px;
+  }
+
+  #profile img{
+    border-radius: 100%;
+    width: 130px;
+    height: 150px;
+  }
+  
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portofolio</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="profile">
+            <h2>Profile</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="/foto/formal.jpg" alt="formal">
+                </div>
+                <div class="portfolio-item">
+                    <ul>
+                        <li>nama</li>
+                        <li>umur</li>
+                        <li>status</li>
+                        <li>tempat tanggal lahir</li>
+                        <li>alamat</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a web developer with a passion for creating beautiful and functional websites.</p>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">Project 1</div>
+                <div class="portfolio-item">Project 2</div>
+                <div class="portfolio-item">Project 3</div>
+                <div class="portfolio-item">Project 4</div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at example@email.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Portfolio</p>
+    </footer>
+</body>
+</html>

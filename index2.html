@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index 2 html</title>
+    <style>
+      body{
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        display: grid;
+        width: 100vw; /* Full width of the viewport */
+        height: 150vh; /* Full height of the viewport */
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 100px 100px 100px;
+        grid-template-areas:
+          "header header header"
+          "menu menu menu"
+          "article article side"
+          "article article side"
+          "footer footer footer";
+        column-gap: 5px;
+        row-gap: 5px;
+      }
+
+      .header {
+        grid-area: header;
+        background: black;
+        color: White;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .li2 img {
+        position: relative;
+        z-index: 1;
+      }
+
+      .menu {
+        grid-area: menu;
+        background: aqua;
+        font-size: 30px;
+      }
+
+      .article {
+        grid-area: article;
+        background: green;
+        font-size: 30px;
+      }
+
+      .side {
+        grid-area: side;
+        background: blue;
+        font-size: 30px;
+      }
+
+      .footer {
+        grid-area: footer;
+        background: yellow;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Portofolio</h2>
+        <h3>welcome to my website</h3>
+        <img src="/foto/pantai-removebg-preview.png" alt="">
+      </div>
+      <div class="menu">menu</div>
+      <div class="article">article</div>
+      <div class="side">side</div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
+</html>
